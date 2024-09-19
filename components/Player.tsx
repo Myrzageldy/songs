@@ -12,7 +12,7 @@ const tracks = [
   { title: "Сен менін адамымсың", artist: "Қайрат Нұртас", src: "/music/Қайрат Нұртас - Сен менің адамымсың (OST Брат или Брак 3).mp3", duration: "2:36", image: "/images/kajrat-nurtas-sen-menin-adamymsyn-ost-brat-ili-brak-3.jpeg", genre: "Toi-Duman"},
   { title: "Not Like Us", artist: "Kendrik Lamar", src: "/music/Kendrick_Lamar_-_Not_Like_Us_77782021.mp3", duration: "3:45", image: "/images/maxresdefault.jpg", genre: "trip hop"},
   { title: "Melodrama", artist: "Sadradin", src: "/music/Sadraddin - Melodrama.mp3", duration: "4:20", image: "/images/sadraddin-melodrama.jpeg", genre: "rap" },
-  { title: "Uige", artist: "Sadradin", src: "/music/sadraddin_-_Uige_76101036.mp3", duration: "2:36", image: "/images/uige.jpg", genre: "Блюз"}
+  { title: "Uige", artist: "Sadradin", src: "/music/sadraddin_-_Uige_76101036.mp3", duration: "2:36", image: "/images/uige.jpg", genre: "Блюз "}
 ];
 
 export default function Player() {
@@ -29,6 +29,7 @@ export default function Player() {
     setFilteredGenre(e.target.value);
   };
 
+  // This is a small comment to test commits
   const filteredTracks = tracks
     .filter(track => 
       (track.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
